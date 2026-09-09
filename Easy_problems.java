@@ -1,3 +1,5 @@
+//217.Contains Duplicate
+//Brute fore
 class Solution {
     public boolean containsDuplicate(int[] nums) { 
         for(int i=0;i<=nums.length-1;i++){
@@ -10,3 +12,18 @@ class Solution {
         return false;
     }
 }
+//contain TC O(n^2) SC O(1) ,execution time may exceeds,so use heapset
+import java.util.HashSet;
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (set.contains(nums[i])) {
+                return true;
+            }
+            set.add(nums[i]);
+        }
+        return false;
+    }
+}
+//TC O(n) SC O(n)
