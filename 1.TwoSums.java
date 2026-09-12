@@ -12,4 +12,5 @@ return new int[]{i,j};
             }
     }return new int[]{};
 }
+    System.out.print();
 }
