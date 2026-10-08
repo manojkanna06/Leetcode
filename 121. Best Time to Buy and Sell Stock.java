@@ -10,3 +10,5 @@ class Solution {
         }return profit;
     }
 }
+/*SC:O(1)
+ TC:O(n)*/
